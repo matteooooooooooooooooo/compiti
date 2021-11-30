@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton"><</button>
+          <button id="nextButton">></button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Domenica</div>
+        <div>Lunedi</div>
+        <div>Martedi</div>
+        <div>Mercoledi</div>
+        <div>Giovedi</div>
+        <div>Venerdi</div>
+        <div>Sabato</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal" style="padding-top: 200px;">
+
+      <input id="eventTitleInput" placeholder="inserisci compito" />
+
+      <button id="saveButton">Salva</button>
+      <button id="cancelButton">Cancella</button>
+    </div>
+
+    <div id="deleteEventModal" style="padding-top: 200px; color:white;">
+      <h2>Compiti</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Cancella</button>
+      <button id="closeButton">Chiudi</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
